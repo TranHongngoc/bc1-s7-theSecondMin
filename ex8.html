@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var x = [1,4,2,6,8,9,12,14,16,-5,0];
+    for (var i = 0; i < x.length-1; i++) {
+        for (var j = i+1; j<x.length; j++) {
+            if (x[j] < x[i]) {
+                var count = x[j];
+                x[j] = x[i];
+                x[i] = count;
+            }
+
+        }
+
+    }
+    console.log(x);
+    document.write(x[1]);
+
+</script>
+</body>
+</html>
